@@ -1,7 +1,7 @@
 #Author: Abel Cejas
 # encoding: utf-8
 
-Feature: Comparar Prendas
+Feature: Login
 
 	Como usuario
 	quiero loguearme en la pagina

@@ -23,7 +23,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
 
-public class login {
+public class loginNuevaContraseña {
 
 	//plataforma: navegador
 	@Managed(driver = "chrome")
@@ -45,11 +45,6 @@ public class login {
     public void que_el_usuario_se_encuentra_en_la_pagina_de_automationpractice() throws Throwable {
         levadura.attemptsTo(IrA.automationPractice(page));
     }
-
-    @When("^el usuario ingresa las credenciales$")
-    public void el_usuario_ingresa_las_credenciales() throws Throwable {
-       levadura.attemptsTo(Login.paraLoguearse());
-    }
     
     @When("^el usuario ingresa las credenciales incorrectas$")
     public void el_usuario_ingresa_las_credenciales_incorrectas() throws Throwable {
@@ -61,25 +56,9 @@ public class login {
 	        levadura.attemptsTo(PedirNuevaContraseña.paraCambiarContraseña());
 	    }
 
-    @Then("^ingresa correctamente a la aplicación de automationpractice$")
-    public void ingresa_correctamente_a_la_aplicacion_de_automationpractice() throws Throwable {
-        levadura.should(seeThat(Ingreso.Exitoso()));
-    }
-
-    @Then("^la aplicación despliega un cartel de error$")
-    public void la_aplicacion_despliega_un_cartel_de_error() throws Throwable {
-        levadura.should(seeThat(HuboError.ParaEntrar()));
-    }
-
     @Then("^se despliega un mensaje de email de recupero enviado$")
     public void se_despliega_un_mensaje_de_email_de_recupero_enviado() throws Throwable {
         levadura.should(seeThat(SeMuestra.verificacionDeEmailEnviado()));
     }
-
-
-    
-    
-
-    
-    
+   
 }
