@@ -1,8 +1,12 @@
 rpackage co.com.arbusta.capacitacion.autoScreenplayCucumber.stepdefinitions;
 
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+
 import org.openqa.selenium.WebDriver;
 
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.registrarse;
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.registrarseCorrectamente;
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.registrarseIncorrectamente;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.registroUserInterfaces;
 import io.cucumber.java.PendingException;
 import io.cucumber.java.en.Given;
@@ -30,17 +34,20 @@ public class registro {
     @When("^el navegante se registra correctamente$")
     public void el_navegante_se_registra_correctamente() throws Throwable {
         
-    	levadura.attemptsTo(registrarse.correctamente);
+    	levadura.attemptsTo(registrarseCorrectamente.paraRegistrarse);
     }
 
     @When("^el navegante se registra incorrectamente$")
     public void el_navegante_se_registra_incorrectamente() throws Throwable {
-        levadura.attemptsTo(registrarse.incorrectamente);
+    	
+        levadura.attemptsTo(registrarseIncorrectamente.paraRebotar);
     }
 
     @Then("^se crea un usuario$")
     public void se_crea_un_usuario() throws Throwable {
-        throw new PendingException();
+    	
+        levadura.should(seeThat(SeRegistro.alRegistrarse()));
+
     }
 
     @Then("^el proceso de ingreso marca los campos de error$")
