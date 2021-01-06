@@ -6,14 +6,11 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 
-import co.com.arbusta.capacitacion.autoScreenplayCucumber.questions.HuboError;
-import co.com.arbusta.capacitacion.autoScreenplayCucumber.questions.Ingreso;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.questions.SeMuestra;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.IngresarIncorrectamente;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.IrA;
-import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.Login;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.PedirNuevaContraseña;
-import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.categoryAutomationPractice;
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.UIprendas;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -30,7 +27,7 @@ public class loginNuevaContraseña {
 	public WebDriver driver;
 	
 	//variable de la pagina
-	private categoryAutomationPractice page;
+	private UIprendas page;
 	
 	//actor
 	Actor levadura = Actor.named("levadura");

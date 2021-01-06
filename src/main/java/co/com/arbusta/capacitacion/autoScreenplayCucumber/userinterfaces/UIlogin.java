@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import net.serenitybdd.screenplay.targets.Target;
 
-public class loginUserInterfaces {
+public class UIlogin {
 	
 	public static final Target BTN_SingIn = Target.the("Boton de login").located(By.xpath("//*[@id=\\\"header\\\"]/div[2]/div/div/nav/div[1]/a"));
 

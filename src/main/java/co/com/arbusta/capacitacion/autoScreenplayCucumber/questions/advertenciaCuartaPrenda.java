@@ -6,17 +6,17 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
 import net.thucydides.core.annotations.Step;
 
+public class advertenciaCuartaPrenda implements Question<Boolean> {
 
-public class Validar implements Question<Boolean>{
-	
-	@Step ("{0} validar pagina de comparacion")
+	@Step ("{0} Falla el ingreso")
 	public Boolean answeredBy(Actor actor) {
 		
-		return Text.of(UIprendas.TITULO_COMPARACIONES).viewedBy(actor).asBoolean();
+		return Text.of(UIprendas.POPUP_COMPARE_ADV).toString().contains("You cannot add more than 3 product(s) to the product comparison");
+
 	}
-	public static Validar significadoPalabra() {
-		return new Validar();
+	public static advertenciaCuartaPrenda seMuestra() {
+		return new advertenciaCuartaPrenda();
 	}
-	
-	
+		
 }
+

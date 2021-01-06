@@ -6,17 +6,18 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
 import net.thucydides.core.annotations.Step;
 
+public class comparadorDePrendas implements Question<Boolean> {
 
-public class Validar implements Question<Boolean>{
-	
-	@Step ("{0} validar pagina de comparacion")
+	@Step ("{0} Falla el ingreso")
 	public Boolean answeredBy(Actor actor) {
 		
-		return Text.of(UIprendas.TITULO_COMPARACIONES).viewedBy(actor).asBoolean();
+		//Precondicion: la pagina debe estar en el idioma original (ingles).
+		
+		return Text.of(UIprendas.TITULO_COMPARACIONES).toString().contains("Product Comparison");
+
 	}
-	public static Validar significadoPalabra() {
-		return new Validar();
+	public static comparadorDePrendas redireccionaA() {
+		return new comparadorDePrendas();
 	}
-	
-	
+		
 }

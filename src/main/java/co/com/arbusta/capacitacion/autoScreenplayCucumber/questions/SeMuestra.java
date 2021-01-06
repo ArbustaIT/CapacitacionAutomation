@@ -1,6 +1,6 @@
 package co.com.arbusta.capacitacion.autoScreenplayCucumber.questions;
 
-import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.loginUserInterfaces;
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.UIlogin;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
@@ -14,8 +14,7 @@ public class SeMuestra implements Question<Boolean> {
 		//compara el contenido dentro del objeto con el contenido del string. 
 		//No usa actor, si la pagina se traduce falla, no se si funciona, funciona solo con el email dicho.
 		
-		return Text.of(loginUserInterfaces.OBJ_cartel_error_pass).toString()
-				.contains("A confirmation email has been sent to your address: lorem555@ipsum.es");
+		return Text.of(UIlogin.OBJ_cartel_error_pass).toString().contains("A confirmation email has been sent to your address: lorem555@ipsum.es");
 
 		
 	}

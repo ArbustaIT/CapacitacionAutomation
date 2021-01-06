@@ -5,7 +5,7 @@ import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.annotations.DefaultUrl;
 
 @DefaultUrl("http://automationpractice.com/")
-public class registroUserInterfaces {
+public class UIregistro {
 
 	public static final Target BTN_SingIn = Target.the("Boton de login").located(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a"));
 	public static final Target CMP_email = Target.the("Boton de login").located(By.xpath("//*[@id=\"email_create\"]"));

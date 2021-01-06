@@ -1,6 +1,6 @@
 package co.com.arbusta.capacitacion.autoScreenplayCucumber.questions;
 
-import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.registroUserInterfaces;
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.UIregistro;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
@@ -11,7 +11,7 @@ public class marcaErroresEnCampos implements Question<Boolean> {
 	@Step ("{0} Falla el ingreso")
 	public Boolean answeredBy(Actor actor) {
 		
-		return Text.of(registroUserInterfaces.OBJ_errores_en_campos).toString().contains("errors");
+		return Text.of(UIregistro.OBJ_errores_en_campos).toString().contains("errors");
 
 	}
 	

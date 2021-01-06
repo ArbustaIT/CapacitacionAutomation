@@ -1,6 +1,6 @@
 package co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks;
 
-import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.loginUserInterfaces;
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.UIlogin;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
@@ -20,10 +20,10 @@ public class IngresarIncorrectamente implements Task {
 
 		actor.attemptsTo(
 				
-						Click.on(loginUserInterfaces.BTN_SingIn),
-						Enter.theValue("lorem555@ipsum.es").into(loginUserInterfaces.CMP_email),
-						Enter.theValue("incorrecta").into(loginUserInterfaces.CMP_pass),
-						Click.on(loginUserInterfaces.BTN_SubmitLogin)			
+						Click.on(UIlogin.BTN_SingIn),
+						Enter.theValue("lorem555@ipsum.es").into(UIlogin.CMP_email),
+						Enter.theValue("incorrecta").into(UIlogin.CMP_pass),
+						Click.on(UIlogin.BTN_SubmitLogin)			
 				); }
 	
 	public static Performable paraVolverAIntentar() {

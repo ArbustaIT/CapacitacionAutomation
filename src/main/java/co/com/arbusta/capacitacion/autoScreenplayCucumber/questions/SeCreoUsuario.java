@@ -1,6 +1,6 @@
 package co.com.arbusta.capacitacion.autoScreenplayCucumber.questions;
 
-import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.registroUserInterfaces;
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.UIregistro;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
@@ -11,7 +11,7 @@ public class SeCreoUsuario implements Question<Boolean> {
 	@Step ("{0} Falla el ingreso")
 	public Boolean answeredBy(Actor actor) {
 		
-		return Text.of(registroUserInterfaces.BTN_cerrar_sesion).toString().contains("Sing Out");
+		return Text.of(UIregistro.BTN_cerrar_sesion).toString().contains("Sing Out");
 
 	}
 	

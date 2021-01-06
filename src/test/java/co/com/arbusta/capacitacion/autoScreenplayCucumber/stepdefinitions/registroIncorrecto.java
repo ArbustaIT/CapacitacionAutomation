@@ -4,13 +4,9 @@ import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 import org.openqa.selenium.WebDriver;
 
-import co.com.arbusta.capacitacion.autoScreenplayCucumber.questions.SeCreoUsuario;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.questions.marcaErroresEnCampos;
-import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.registrarse;
-import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.registrarseCorrectamente;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.registrarseIncorrectamente;
-import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.registroUserInterfaces;
-import io.cucumber.java.PendingException;
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.UIregistro;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -23,7 +19,7 @@ public class registroIncorrecto {
 		@Managed(driver = "chrome")
 		public WebDriver driver;
 			
-		private registroUserInterfaces page;
+		private UIregistro page;
 			
 		Actor levadura = Actor.named("levadura");
 

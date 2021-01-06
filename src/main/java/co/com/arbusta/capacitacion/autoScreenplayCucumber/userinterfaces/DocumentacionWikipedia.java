@@ -1,7 +1,5 @@
 package co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces;
 
-import org.openqa.selenium.By;
-
 import net.serenitybdd.screenplay.targets.Target;
 
 public class DocumentacionWikipedia {
