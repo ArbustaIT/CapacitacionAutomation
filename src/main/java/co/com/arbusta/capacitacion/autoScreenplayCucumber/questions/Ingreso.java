@@ -1,5 +1,7 @@
 package co.com.arbusta.capacitacion.autoScreenplayCucumber.questions;
 
+import static org.junit.Assert.assertTrue;
+
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.UIlogin;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
@@ -12,7 +14,8 @@ public class Ingreso implements Question<Boolean> {
 	public Boolean answeredBy(Actor actor) {
 		
 		//.isEnabled
-		return Text.of(UIlogin.BTN_SingOut).viewedBy(actor).asBoolean();
+//		return Text.of(UIlogin.BTN_SingOut).viewedBy(actor).asBoolean();
+		return null;
 	}
 	public static Ingreso Exitoso() {
 		return new Ingreso();
