@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Login" skipped="0" tests="3" time="79.33" timestamp="2021-01-18 01:09:22"><testcase name="Validación Login Exitoso"/><testcase name="Validación Login Fallido"/><testcase name="Nueva Contraseña"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Login" skipped="0" tests="3" time="77.47" timestamp="2021-02-01 12:44:24"><testcase name="Validación Login Exitoso"/><testcase name="Validación Login Fallido"/><testcase name="Nueva Contraseña"/></testsuite>

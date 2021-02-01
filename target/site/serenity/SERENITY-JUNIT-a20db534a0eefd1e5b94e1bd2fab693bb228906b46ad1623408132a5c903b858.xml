@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Barra De Busqueda" skipped="0" tests="2" time="40.37" timestamp="2021-01-19 12:37:44"><testcase name="Buscar producto existente"/><testcase name="Buscar producto inexistente"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Barra De Busqueda" skipped="0" tests="2" time="39.62" timestamp="2021-01-20 01:43:52"><testcase name="Buscar producto existente"/><testcase name="Buscar producto inexistente"/></testsuite>

@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.questions.resultadosFiltro;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.IrA;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.filtro;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.UIfiltros;
@@ -42,5 +43,6 @@ public class FiltroDeCatalogo {
 
     @Then("^se muestran los resultados de la busqueda con el filtro$")
     public void se_muestran_los_resultados_de_la_bsqueda_con_el_filtro() {
+    	Cristian.asksFor(resultadosFiltro.seVisualizan());
     } 
 }

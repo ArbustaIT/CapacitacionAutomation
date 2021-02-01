@@ -36,6 +36,6 @@ public class UIregistro extends PageObject {
 
 	public static final Target BTN_registarse = Target.the("Boton de login").located(By.id("submitAccount"));
 	public static final Target BTN_cerrar_sesion = Target.the("Boton de login").located(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[2]/a"));
-	public static final Target OBJ_errores_en_campos = Target.the("Boton de login").located(By.xpath("//*[@id=\"center_column\"]/div"));
+	public static final Target BOX_errores_en_campos = Target.the("Cartel de errores en campos").located(By.xpath("//*[@id=\"center_column\"]/div"));
 	public static final Target BOX_authentication = Target.the("caja de autentificacion").located(By.xpath("//*[@id=\"columns\"]/div[3]"));
 }

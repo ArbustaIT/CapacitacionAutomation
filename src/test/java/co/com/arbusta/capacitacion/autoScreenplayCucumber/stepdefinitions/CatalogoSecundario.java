@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.questions.catalogoSecundario;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.EntreCatalogos;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.IrA;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.UIcatalogoSecundario;
@@ -41,5 +42,6 @@ public void SetUp() {
 
     @Then("^se visualizan los productos correspondientes a la seccion$")
     public void se_visualizan_los_productos_correspondientes_a_la_seccion() {
+    	Cristian.asksFor(catalogoSecundario.vuelveApupolar());
     }
 }

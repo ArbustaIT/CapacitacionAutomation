@@ -5,6 +5,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.questions.faltaPrenda;
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.questions.maxPrendas;
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.questions.prendas;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.IrA;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.PrimeraPrenda;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.compara;
@@ -48,6 +51,7 @@ public class CompararPrendas {
     
     @Then("^se visualiza un cartel advirtiendo que falta otra prenda$")
     public void se_visualiza_un_cartel_advirtiendo_que_falta_otra_prenda() {
+    	Cristian.asksFor(faltaPrenda.advierte());
     }
     
     // selecciono dos prendas
@@ -61,6 +65,7 @@ public class CompararPrendas {
     
     @Then("^se visualiza una columna por prenda con la informacion respectiva$")
     public void se_visualiza_una_columna_por_prenda_con_la_informacion_respectiva() {
+    	Cristian.asksFor(prendas.compara());
     }
 
     // selecciono cuatro prendas
@@ -74,6 +79,7 @@ public class CompararPrendas {
 
     @Then("^despliega cartel bloqueante$")
     public void despliega_cartel_bloqueante() {
+    	Cristian.asksFor(maxPrendas.advierte());
     }
 }
 	
