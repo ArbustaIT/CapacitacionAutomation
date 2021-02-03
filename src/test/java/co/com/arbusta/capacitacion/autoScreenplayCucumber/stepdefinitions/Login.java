@@ -39,7 +39,7 @@ public class Login {
 
     @When("^el usuario ingresa las credenciales$")
     public void el_usuario_ingresa_las_credenciales() {
-    	Cristian.attemptsTo(Loguearse.correctamente("lorem555@ipsum.es","12345678"));
+    	Cristian.attemptsTo(Loguearse.correctamente("loremum2@gmail.com","12345678"));
     }
 
     @Then("^ingresa correctamente a la aplicación de automationpractice$")
@@ -51,7 +51,7 @@ public class Login {
 //    
     @When("^el usuario ingresa las credenciales incorrectas$")
     public void el_usuario_ingresa_las_credenciales_incorrectas() {
-    	Cristian.attemptsTo(Loguearse.correctamente("lorem555@ipsum.es", "incorrecto"));
+    	Cristian.attemptsTo(Loguearse.correctamente("loremum2@gmail.com", "incorrecto"));
     }
 
     @Then("^la aplicación despliega un cartel de error$")

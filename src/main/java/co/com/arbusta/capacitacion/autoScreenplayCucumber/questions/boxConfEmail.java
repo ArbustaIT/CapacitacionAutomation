@@ -10,15 +10,7 @@ public class boxConfEmail implements Question<Boolean>{
 	
 	@Override
 	public Boolean answeredBy(Actor actor) {
-		
-//		 if ( UIlogin.BOX_confirmacionEmail.resolveFor(actor).isEnabled() ) {
-//			 
-//			 System.out.println("encontré el elemento");
-//			 return false;
-//		 }
-//		 
-//		return false;
-		
+			
 		return UIlogin.BOX_confirmacionEmail.resolveFor(actor).isEnabled();
 					
 	}

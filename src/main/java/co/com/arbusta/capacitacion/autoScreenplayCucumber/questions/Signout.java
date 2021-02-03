@@ -9,8 +9,6 @@ public class Signout implements Question<Boolean>{
 	@Override
 	public Boolean answeredBy(Actor actor) {
 		
-		//return UIlogin.BTN_SingOut.resolveFor(actor).containsOnlyText("Pax");
-		//	return UIlogin.BTN_SingOut.resolveAllFor(actor).contains("pax");
 				
 		 String texto = UIlogin.BTN_SingOut.resolveFor(actor).getText().toString();		 
 	

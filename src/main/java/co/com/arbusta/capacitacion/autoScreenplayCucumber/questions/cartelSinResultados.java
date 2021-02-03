@@ -9,12 +9,7 @@ public class cartelSinResultados implements Question<Boolean>{
 	@Override
 	public Boolean answeredBy(Actor actor) {
 		
-			Boolean hayPrendas = false;
-			
-			if ( UIbarraDeBusqueda.OBJ_msj_resultados_busqueda_0.resolveFor(actor).isEnabled()) {
-				hayPrendas = true;
-			}
-		return hayPrendas;
+		return UIbarraDeBusqueda.OBJ_msj_resultados_busqueda_0.resolveFor(actor).isEnabled();
 	}
 	
 	public static cartelSinResultados muestra() {

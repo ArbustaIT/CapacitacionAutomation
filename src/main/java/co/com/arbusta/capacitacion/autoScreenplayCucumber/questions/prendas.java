@@ -9,14 +9,8 @@ public class prendas implements Question<Boolean>{
 	@Override
 	public Boolean answeredBy(Actor actor) {
 		
-		Boolean bool = false;
-		
-		if ( UIprendas.TITULO_COMPARACIONES.resolveFor(actor).isEnabled()) {
-			
-			System.out.println("entra a la seccion de comparar");
-			bool = true;			
-		}		
-	return bool;
+	return UIprendas.TITULO_COMPARACIONES.resolveFor(actor).isEnabled();
+
 	}
 	
 	public static prendas compara() {

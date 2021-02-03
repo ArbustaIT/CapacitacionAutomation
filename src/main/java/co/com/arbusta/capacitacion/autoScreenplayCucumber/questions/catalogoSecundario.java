@@ -9,15 +9,7 @@ public class catalogoSecundario implements Question<Boolean>{
 	@Override
 	public Boolean answeredBy(Actor actor) {
 		
-		Boolean focusPopular = false;
-		
-		if (UIcatalogoSecundario.BTN_POPULAR.resolveFor(actor).hasFocus()) {
-			
-			System.out.println("estoy sobre popular");
-			focusPopular = true;
-		}
-		return focusPopular;
-		
+		return UIcatalogoSecundario.BTN_POPULAR.resolveFor(actor).hasFocus();	
 	}
 	
 	public static catalogoSecundario vuelveApupolar() {

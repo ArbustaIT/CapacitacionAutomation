@@ -9,16 +9,8 @@ public class camposIncorrectos implements Question<Boolean>{
 	
 	@Override
 	public Boolean answeredBy(Actor actor) {
-		
-	WebElementFacade localizador = UIregistro.BOX_errores_en_campos.resolveFor(actor);
-	
-	if ( localizador.isEnabled() ) {
-		
-		System.out.println("encontré el elemento");
-		return false;	
-		}
 
-	return false;
+	return UIregistro.BOX_errores_en_campos.resolveFor(actor).isEnabled();
 	}
 	
 	public static camposIncorrectos muestra() {

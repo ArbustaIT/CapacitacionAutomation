@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 01-02-2021 11:34</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-02-2021 11:21</span>
     <br style="clear:left"/>
 </div>
 
@@ -191,9 +191,9 @@ para obtener un usuario
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Validacion Registro Fallido
+                                <span class="failing-color">Validacion Registro Fallido
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -210,6 +210,52 @@ para obtener un usuario
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be present exception: Expected condition failed: waiting for By.xpath: //*[@id='account-creation_form']/div[1]/div[1]/div[1]/label to be present (tried for 5 second(s) with 100 milliseconds interval)Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'NR-007', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'Driver info: driver.version: unknown</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.Registrarse.performAs(Registrarse.java:29)<br />co.com.arbusta.capacitacion.autoScreenplayCucumber.stepdefinitions.Registro.el_navegante_se_registra_incorrectamente(Registro.java:42)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:63)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:49)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:99)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:71)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:234)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)<br />org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: //*[@id=&quot;account-creation_form&quot;]/div[1]/div[1]/div[1]/label to be present (tried for 5 second(s) with 100 milliseconds interval)<br>Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'<br>System info: host: 'NR-007', ip: '192.168.0.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'<br>Driver info: driver.version: unknown</pre>
+                        <pre>co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.Registrarse.performAs(Registrarse.java :29)<br />co.com.arbusta.capacitacion.autoScreenplayCucumber.stepdefinitions.Registro.el_navegante_se_registra_incorrectamente(Registro.java :42)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java :66)<br />io.cucumber.java.Invoker.invoke(Invoker.java :24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java :47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java :29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java :66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java :63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java :92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java :63)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java :49)<br />io.cucumber.core.runner.TestCase.run(TestCase.java :99)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java :71)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :234)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :57)<br />org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java :89)<br />org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java :41)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :542)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :770)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java :464)<br />org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java :210)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="#" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="a5c593a3ec2d01d44a44b5d082c924e4cbbbc7102af69355894b684c94a1a5bb.png" title=" Given que el navegante se encuentra en la pagina automationpractice" width="1366"/>
@@ -218,54 +264,14 @@ para obtener un usuario
                 <img src="7b2ba2a48467aed62836bc76f6f517b02dae6709b7868ed892e601d992d2ac92.png" title=" Cristian opens the U iregistro (completed)" width="1366"/>
                 <img src="7b2ba2a48467aed62836bc76f6f517b02dae6709b7868ed892e601d992d2ac92.png" title=" Cristian ir a (completed)" width="1366"/>
                 <img src="7b2ba2a48467aed62836bc76f6f517b02dae6709b7868ed892e601d992d2ac92.png" title=" Given que el navegante se encuentra en la pagina automationpractice (completed)" width="1366"/>
-                <img src="b5d33f7691debdcb341a1d7903e2c5d230e12d9e58145016be2e220cf507e961.png" title=" When el navegante se registra incorrectamente" width="1366"/>
-                <img src="b5d33f7691debdcb341a1d7903e2c5d230e12d9e58145016be2e220cf507e961.png" title=" Cristian registrarse" width="1366"/>
+                <img src="7b2ba2a48467aed62836bc76f6f517b02dae6709b7868ed892e601d992d2ac92.png" title=" When el navegante se registra incorrectamente" width="1366"/>
+                <img src="7b2ba2a48467aed62836bc76f6f517b02dae6709b7868ed892e601d992d2ac92.png" title=" Cristian registrarse" width="1366"/>
                 <img src="b5d33f7691debdcb341a1d7903e2c5d230e12d9e58145016be2e220cf507e961.png" title=" Cristian clicks on #name" width="1366"/>
-                <img src="b5d33f7691debdcb341a1d7903e2c5d230e12d9e58145016be2e220cf507e961.png" title=" Cristian enters 'loremum2@gmail.com' into Boton de login" width="1366"/>
+                <img src="6cd8fe7beb54e030502c36a121bb9d62131419c188045c5470cef754e64088b2.png" title=" Cristian enters 'loremum2@gmail.com' into Boton de login" width="1366"/>
                 <img src="f49cb4caf450b022365ae33892508a9f08efca37333d70e85358a936e1178460.png" title=" Cristian enters 'loremum2@gmail.com' into Boton de login (completed)" width="1366"/>
                 <img src="f49cb4caf450b022365ae33892508a9f08efca37333d70e85358a936e1178460.png" title=" Cristian clicks on #name" width="1366"/>
                 <img src="30b9926f1007e3eb269f8db851455e4c3424a1b7a9d907110b484b7673419f5d.png" title=" Cristian clicks on #name (completed)" width="1366"/>
-                <img src="30b9926f1007e3eb269f8db851455e4c3424a1b7a9d907110b484b7673419f5d.png" title=" Cristian clicks on #name" width="1366"/>
-                <img src="bd3426028112ac468e2736c5a0f92ba6782383d874019e5c469364b8e3b14627.png" title=" Cristian clicks on #name (completed)" width="1366"/>
-                <img src="bd3426028112ac468e2736c5a0f92ba6782383d874019e5c469364b8e3b14627.png" title=" Cristian enters 'Cristian' into Boton de login" width="1366"/>
-                <img src="493b5238264ce7eed7a28d92bc502062c9d3f477b5de7a14e5bb1b8e9336a99f.png" title=" Cristian enters 'Cristian' into Boton de login (completed)" width="1366"/>
-                <img src="493b5238264ce7eed7a28d92bc502062c9d3f477b5de7a14e5bb1b8e9336a99f.png" title=" Cristian enters 'Bot' into Boton de login" width="1366"/>
-                <img src="f9011e865bdb9d1d2ee4907e37a035bfd28972f5eb4db348bed68d7e53253777.png" title=" Cristian enters 'Bot' into Boton de login (completed)" width="1366"/>
-                <img src="f9011e865bdb9d1d2ee4907e37a035bfd28972f5eb4db348bed68d7e53253777.png" title=" Cristian enters '12345678' into Boton de login" width="1366"/>
-                <img src="60c81800f30019a013942519830dbe7f4e90ebfd1e0106e556ba78b514833736.png" title=" Cristian enters '12345678' into Boton de login (completed)" width="1366"/>
-                <img src="60c81800f30019a013942519830dbe7f4e90ebfd1e0106e556ba78b514833736.png" title=" Cristian clicks on #name" width="1366"/>
-                <img src="b06f4d54128963e2b1e8b4675ec565c5307243e0ea010e6bf50c99b4224e3bc1.png" title=" Cristian clicks on #name (completed)" width="1366"/>
-                <img src="b06f4d54128963e2b1e8b4675ec565c5307243e0ea010e6bf50c99b4224e3bc1.png" title=" Cristian clicks on #name" width="1366"/>
-                <img src="b06f4d54128963e2b1e8b4675ec565c5307243e0ea010e6bf50c99b4224e3bc1.png" title=" Cristian clicks on #name (completed)" width="1366"/>
-                <img src="b06f4d54128963e2b1e8b4675ec565c5307243e0ea010e6bf50c99b4224e3bc1.png" title=" Cristian clicks on #name" width="1366"/>
-                <img src="99ed1250f3e13d521edccfc4a84869430aa055a6b57629b49c652e6a23ed2363.png" title=" Cristian clicks on #name (completed)" width="1366"/>
-                <img src="99ed1250f3e13d521edccfc4a84869430aa055a6b57629b49c652e6a23ed2363.png" title=" Cristian clicks on #name" width="1366"/>
-                <img src="99ed1250f3e13d521edccfc4a84869430aa055a6b57629b49c652e6a23ed2363.png" title=" Cristian clicks on #name (completed)" width="1366"/>
-                <img src="99ed1250f3e13d521edccfc4a84869430aa055a6b57629b49c652e6a23ed2363.png" title=" Cristian clicks on #name" width="1366"/>
-                <img src="889adf469ea1da66fe70a2416a9b083c0f5aa7c1476499889de206b1005e7d79.png" title=" Cristian clicks on #name (completed)" width="1366"/>
-                <img src="889adf469ea1da66fe70a2416a9b083c0f5aa7c1476499889de206b1005e7d79.png" title=" Cristian clicks on #name" width="1366"/>
-                <img src="889adf469ea1da66fe70a2416a9b083c0f5aa7c1476499889de206b1005e7d79.png" title=" Cristian clicks on #name (completed)" width="1366"/>
-                <img src="889adf469ea1da66fe70a2416a9b083c0f5aa7c1476499889de206b1005e7d79.png" title=" Cristian enters 'Levadura' into Boton de login" width="1366"/>
-                <img src="9e7986d3fbc3af67c5a652d5f7f4a3db090685c074daae87a8d6d19ab884ec5d.png" title=" Cristian enters 'Levadura' into Boton de login (completed)" width="1366"/>
-                <img src="9e7986d3fbc3af67c5a652d5f7f4a3db090685c074daae87a8d6d19ab884ec5d.png" title=" Cristian enters 'Salvado' into Boton de login" width="1366"/>
-                <img src="df5c3e92c66e11ba8587e80793c1156df9c2d68c6579f42ba1830f8a7848ff79.png" title=" Cristian enters 'Salvado' into Boton de login (completed)" width="1366"/>
-                <img src="df5c3e92c66e11ba8587e80793c1156df9c2d68c6579f42ba1830f8a7848ff79.png" title=" Cristian enters 'calle 888 numero 2750' into Boton de login" width="1366"/>
-                <img src="2fe078c59ca712cfec3676ba53786a3d1690b124460ebcf2e2a36d34bfecffa4.png" title=" Cristian enters 'calle 888 numero 2750' into Boton de login (completed)" width="1366"/>
-                <img src="2fe078c59ca712cfec3676ba53786a3d1690b124460ebcf2e2a36d34bfecffa4.png" title=" Cristian enters 'Narmia' into Boton de login" width="1366"/>
-                <img src="04e22fce3c3987f8ace6edca8d6c317a0de296b8d8549037b61f284a5b5ba8d7.png" title=" Cristian enters 'Narmia' into Boton de login (completed)" width="1366"/>
-                <img src="04e22fce3c3987f8ace6edca8d6c317a0de296b8d8549037b61f284a5b5ba8d7.png" title=" Cristian enters '0' into Boton de login" width="1366"/>
-                <img src="e2ff083f2d1505bc370ecf3b98dd63ebb374dcf1ca2db52fd65ba3bd19b1bf3d.png" title=" Cristian enters '0' into Boton de login (completed)" width="1366"/>
-                <img src="e2ff083f2d1505bc370ecf3b98dd63ebb374dcf1ca2db52fd65ba3bd19b1bf3d.png" title=" Cristian enters '1167321720' into Boton de login" width="1366"/>
-                <img src="29709dfb62ea8c05a99ded435c9270d875b7e371720064a91ba8f7dc31593880.png" title=" Cristian enters '1167321720' into Boton de login (completed)" width="1366"/>
-                <img src="29709dfb62ea8c05a99ded435c9270d875b7e371720064a91ba8f7dc31593880.png" title=" Cristian clicks on #name" width="1366"/>
-                <img src="3837ef81dd06c575e7e11c41f2606c35bbb831b9537e2e9de7116a643471bceb.png" title=" Cristian clicks on #name (completed)" width="1366"/>
-                <img src="3837ef81dd06c575e7e11c41f2606c35bbb831b9537e2e9de7116a643471bceb.png" title=" Cristian clicks on #name" width="1366"/>
-                <img src="8b90bdb6fdfaa511a3d0719155c773bfb9d01b420e20942bffb2677d2306373c.png" title=" Cristian clicks on #name (completed)" width="1366"/>
-                <img src="8b90bdb6fdfaa511a3d0719155c773bfb9d01b420e20942bffb2677d2306373c.png" title=" Cristian clicks on #name" width="1366"/>
-                <img src="d73c3405da33f3b0304e3bf580236b15d5b58b9958b762d749bc48554d491060.png" title=" Cristian clicks on #name (completed)" width="1366"/>
-                <img src="d73c3405da33f3b0304e3bf580236b15d5b58b9958b762d749bc48554d491060.png" title=" Cristian registrarse (completed)" width="1366"/>
-                <img src="d73c3405da33f3b0304e3bf580236b15d5b58b9958b762d749bc48554d491060.png" title=" When el navegante se registra incorrectamente (completed)" width="1366"/>
-                <img src="d73c3405da33f3b0304e3bf580236b15d5b58b9958b762d749bc48554d491060.png" title=" Then el proceso de ingreso marca los campos de error: <span class='success-color'>SUCCESS</span>" width="1366"/>
+                <img src="30b9926f1007e3eb269f8db851455e4c3424a1b7a9d907110b484b7673419f5d.png" title=" Cristian clicks on #name: <span class='failing-color'>FAILURE</span>" width="1366"/>
             </div>
         </div>
 

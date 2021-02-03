@@ -9,14 +9,7 @@ public class maxPrendas implements Question<Boolean>{
 	@Override
 	public Boolean answeredBy(Actor actor) {
 		
-		Boolean bool = false;
-		
-		if ( UIprendas.POPUP_COMPARE_ADV.resolveFor(actor).isEnabled()) {
-			
-			System.out.println("despliega advertencia de maximas prendas seleccionadas");
-			bool = true;			
-		}		
-	return bool;
+	return UIprendas.POPUP_COMPARE_ADV.resolveFor(actor).isEnabled();
 	}
 	
 	public static maxPrendas advierte() {
