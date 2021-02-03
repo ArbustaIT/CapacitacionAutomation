@@ -4,6 +4,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.questions.cartelSinResultados;
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.questions.numerosDeResultado;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.IrA;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.producto;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.UIbarraDeBusqueda;
@@ -42,6 +44,7 @@ public class BarraDeBusqueda {
 
    @Then("^se despliega el menu con los resultados de busqueda correspondientes$")
    public void se_despliega_el_menu_con_los_resultados_de_busqueda_correspondientes() {
+	   Cristian.asksFor(numerosDeResultado.devuelveUn());
    }
 
    //Escenario Fallido
@@ -52,7 +55,7 @@ public class BarraDeBusqueda {
 
     @Then("^se visualiza el menu vacio junto al mensaje sin resultados de busqueda$")
     public void se_visualiza_el_menu_vacio_junto_al_mensaje_sin_resultados_de_busqueda() {
+    	Cristian.asksFor(cartelSinResultados.muestra());
     }
     
-
 }

@@ -1,6 +1,10 @@
 package co.com.arbusta.capacitacion.autoScreenplayCucumber.stepdefinitions;
 
 import org.openqa.selenium.WebDriver;
+
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.questions.Signout;
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.questions.boxConfEmail;
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.questions.boxPasswdError;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.IrA;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.Loguearse;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.PedirNuevaContraseña;
@@ -35,21 +39,24 @@ public class Login {
 
     @When("^el usuario ingresa las credenciales$")
     public void el_usuario_ingresa_las_credenciales() {
-    	Cristian.attemptsTo(Loguearse.correctamente("lorem555@ipsum.es","12345678"));
+    	Cristian.attemptsTo(Loguearse.correctamente("loremum2@gmail.com","12345678"));
     }
 
     @Then("^ingresa correctamente a la aplicación de automationpractice$")
     public void ingresa_correctamente_a_la_aplicacin_de_automationpractice() {
+    	Cristian.asksFor(Signout.estaPresente());
     }
-    
-    //Validación Login Fallido 
+
+//	//Validación Login Fallido 
+//    
     @When("^el usuario ingresa las credenciales incorrectas$")
     public void el_usuario_ingresa_las_credenciales_incorrectas() {
-    	Cristian.attemptsTo(Loguearse.correctamente("lorem555@ipsum.es", "incorrecto"));
+    	Cristian.attemptsTo(Loguearse.correctamente("loremum2@gmail.com", "incorrecto"));
     }
 
     @Then("^la aplicación despliega un cartel de error$")
-    public void la_aplicacin_despliega_un_cartel_de_error() {
+    public boolean la_aplicacin_despliega_un_cartel_de_error() {
+    	return Cristian.asksFor(boxPasswdError.estaPresente());
     }
     
     //Nueva Contraseña
@@ -64,6 +71,7 @@ public class Login {
     }
 
     @Then("^se despliega un mensaje de email de recupero enviado$")
-    public void se_despliega_un_mensaje_de_email_de_recupero_enviado() {
+    public boolean se_despliega_un_mensaje_de_email_de_recupero_enviado() {
+    	return Cristian.asksFor(boxConfEmail.estaPresente());
     }
 }

@@ -26,9 +26,9 @@ public class UIlogin extends PageObject{
 
 	//Validaciones
 	
-	public static final Target BTN_SingOut = Target.the("Boton de Cerrar Sesion").located(By.className("logout"));
-	public static final Target OBJ_cartel_error_pass = Target.the("Cartel de error por contraseña invalida").located(By.xpath("//*[@id=\"center_column\"]/div[1]/ol/li"));
-	public static final Target OBJ_cartel_email_recupero = Target.the("Cartel de email de recupero enviado").located(By.xpath("//*[@id=\"center_column\"]/div/p"));
+	public static final Target BTN_SingOut = Target.the("Boton de Cerrar Sesion").located(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[2]/a"));
+	public static final Target BOX_passwdInvalid = Target.the("Cartel de error por contraseña invalida").located(By.xpath("//*[@id=\"center_column\"]/div[1]/ol/li"));
+	public static final Target BOX_confirmacionEmail = Target.the("Cartel de email de recupero enviado").located(By.xpath("//*[@id=\"center_column\"]/div/p"));
 
 }
 

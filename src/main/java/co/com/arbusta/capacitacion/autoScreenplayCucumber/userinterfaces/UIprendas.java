@@ -26,7 +26,7 @@ public class UIprendas extends PageObject {
 	//Para las Questions
 	
 	public static final Target TITULO_COMPARACIONES = Target.the("Titulo de la seccion de comparacion").located(By.xpath("//*[@id=\"center_column\"]/h1"));	
-	public static final Target POPUP_COMPARE_ADV = Target.the("Titulo de la seccion de comparacion").located(By.xpath("//*[@id=\"category\"]/div[2]/div/div/div/div/p"));
+	public static final Target POPUP_COMPARE_ADV = Target.the("Titulo de la seccion de comparacion").located(By.xpath("//*[@id=\"search\"]/div[2]/div/div/div/div/p"));
 
 	
 	

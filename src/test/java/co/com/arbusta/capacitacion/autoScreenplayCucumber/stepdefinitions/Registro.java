@@ -2,6 +2,8 @@ package co.com.arbusta.capacitacion.autoScreenplayCucumber.stepdefinitions;
 
 import org.openqa.selenium.WebDriver;
 
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.questions.Signout;
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.questions.camposIncorrectos;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.IrA;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.Registrarse;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.UIregistro;
@@ -22,7 +24,7 @@ public class Registro {
 	
 	Actor Cristian = Actor.named("Cristian");
 
-	private String email = "loremum@gmail.com";
+	private String email = "loremum2@gmail.com";
 	private String passwd = "12345678";
 	
 	@Before
@@ -42,6 +44,7 @@ public class Registro {
 
     @Then("^el proceso de ingreso marca los campos de error$")
     public void el_proceso_de_ingreso_marca_los_campos_de_error() {
+    	Cristian.asksFor(camposIncorrectos.muestra());
     }
 
     @When("^el navegante se registra correctamente$")
@@ -50,6 +53,7 @@ public class Registro {
     }
     
     @Then("^se crea un usuario$")
-    public void se_crea_un_usuario() throws Throwable {
+    public void se_crea_un_usuario() {
+    	Cristian.asksFor(Signout.estaPresente());
     }
 }

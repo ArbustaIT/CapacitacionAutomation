@@ -4,6 +4,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.questions.BannerCategoria;
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.questions.BannerSubCategoria;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.Categoria;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.IrA;
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks.Subcategoria;
@@ -43,6 +45,7 @@ public class CategoriasEnMenu {
 
     @Then("^se despliega el menu con los productos de la categoria$")
     public void se_despliega_el_menu_con_los_productos_de_la_categoria() {
+    	Cristian.asksFor(BannerCategoria.correspondeAlIngresado());
     }
     
     @When("^el usuario selecciona una subcategoria del menu$")
@@ -52,5 +55,6 @@ public class CategoriasEnMenu {
 
     @Then("^se despliega el menu con los productos de la subcategoria$")
     public void se_despliega_el_menu_con_los_productos_de_la_subcategoria() {
+    	Cristian.asksFor(BannerSubCategoria.correspondeAlIngresado());
     }
 }
