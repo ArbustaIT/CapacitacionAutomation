@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="a985ae4a44d18fc915dd94875fe948e4b092831f32b4f9c1aaf68c2359e82aee.html">Comparar Prendas</a></span>
+                > <span class="truncate-60"><a
+                    href="7a276efec48d1bdc1b740191c8ca12564aa09f8fb7d91bfebac547811e0d6ab9.html">Comparar cuatro prendas </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-01-2021 12:10</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Comparar Prendas </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                como usuario<br />
+quiero comparar prendas<br />
+para visualizar su información.
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Comparar cuatro prendas
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="a5c593a3ec2d01d44a44b5d082c924e4cbbbc7102af69355894b684c94a1a5bb.png" title=" Given ingreso a la pagina principal" width="1366"/>
+                <img src="a5c593a3ec2d01d44a44b5d082c924e4cbbbc7102af69355894b684c94a1a5bb.png" title=" Cristian ir a" width="1366"/>
+                <img src="a5c593a3ec2d01d44a44b5d082c924e4cbbbc7102af69355894b684c94a1a5bb.png" title=" Cristian opens the U iprendas" width="1366"/>
+                <img src="9906a818b1177cfa480c0382d7e73fa29349e02a8842e391740c8657be9c0a57.png" title=" Cristian opens the U iprendas (completed)" width="1366"/>
+                <img src="9906a818b1177cfa480c0382d7e73fa29349e02a8842e391740c8657be9c0a57.png" title=" Cristian ir a (completed)" width="1366"/>
+                <img src="9906a818b1177cfa480c0382d7e73fa29349e02a8842e391740c8657be9c0a57.png" title=" Given ingreso a la pagina principal (completed)" width="1366"/>
+                <img src="6a28098db33129d989123f689f2d9cab88b49b47c6fcff85e8168aeaecd41b26.png" title=" When selecciono cuatro prendas" width="1366"/>
+                <img src="6a28098db33129d989123f689f2d9cab88b49b47c6fcff85e8168aeaecd41b26.png" title=" Cristian login para loguearse" width="1366"/>
+                <img src="6a28098db33129d989123f689f2d9cab88b49b47c6fcff85e8168aeaecd41b26.png" title=" Cristian enters 'Dresses' into Barra de busqueda" width="1366"/>
+                <img src="6a28098db33129d989123f689f2d9cab88b49b47c6fcff85e8168aeaecd41b26.png" title=" Cristian clicks on #name" width="1366"/>
+                <img src="dc766cbfd5ae7d20f7e1a02bce47206a30f908baae9997c3843b6a31b081dae2.png" title=" Cristian clicks on #name (completed)" width="1366"/>
+                <img src="7c35161e8d7ac58086e3e3dfb4d49afdb7f1de18805b650546c65f28c03bed59.png" title=" Cristian clicks on #name" width="1366"/>
+                <img src="2215486fba791defe7df550329ca14ab60b9d9810003e11f778793a260bc618e.png" title=" Cristian clicks on #name (completed)" width="1366"/>
+                <img src="2215486fba791defe7df550329ca14ab60b9d9810003e11f778793a260bc618e.png" title=" Cristian clicks on #name" width="1366"/>
+                <img src="5c17243c231542c3bd6ab6fd891ec99a92e7033dd0a28d028a45f63b51b221fa.png" title=" Cristian clicks on #name (completed)" width="1366"/>
+                <img src="5c17243c231542c3bd6ab6fd891ec99a92e7033dd0a28d028a45f63b51b221fa.png" title=" Cristian login para loguearse (completed)" width="1366"/>
+                <img src="5c17243c231542c3bd6ab6fd891ec99a92e7033dd0a28d028a45f63b51b221fa.png" title=" Cristian login para loguearse" width="1366"/>
+                <img src="5c17243c231542c3bd6ab6fd891ec99a92e7033dd0a28d028a45f63b51b221fa.png" title=" Cristian clicks on #name" width="1366"/>
+                <img src="35716d56f1994146cec89f3ca747b3c9e78aac174f866f8a8ea4f732fe279185.png" title=" Cristian clicks on #name (completed)" width="1366"/>
+                <img src="35716d56f1994146cec89f3ca747b3c9e78aac174f866f8a8ea4f732fe279185.png" title=" Cristian clicks on #name" width="1366"/>
+                <img src="077d0e03fd5036b6ffb4f46c6596fcd7917ff29391d7a1ac13bf6254b18d27e7.png" title=" Cristian clicks on #name (completed)" width="1366"/>
+                <img src="077d0e03fd5036b6ffb4f46c6596fcd7917ff29391d7a1ac13bf6254b18d27e7.png" title=" Cristian login para loguearse (completed)" width="1366"/>
+                <img src="077d0e03fd5036b6ffb4f46c6596fcd7917ff29391d7a1ac13bf6254b18d27e7.png" title=" Cristian cuarta prenda" width="1366"/>
+                <img src="077d0e03fd5036b6ffb4f46c6596fcd7917ff29391d7a1ac13bf6254b18d27e7.png" title=" Cristian clicks on #name" width="1366"/>
+                <img src="bcacfa2b707d76698333de7e9a62aaf07f1b1b87c834fd425733d73e4da544d3.png" title=" Cristian clicks on #name (completed)" width="1366"/>
+                <img src="bcacfa2b707d76698333de7e9a62aaf07f1b1b87c834fd425733d73e4da544d3.png" title=" Cristian clicks on #name" width="1366"/>
+                <img src="821189a8891675578f046b60402826024b680677d10db24f07969d18392485cf.png" title=" Cristian clicks on #name (completed)" width="1366"/>
+                <img src="3145d57e380afa9edfb6d9b1a45ce37d2fde03d8a5021cb02f6510424985b8cd.png" title=" Cristian clicks on #name" width="1366"/>
+                <img src="8f03bb9eb8311e35d0d98573999185c4c1b81e6b0257df11709e6809d2619d0c.png" title=" Cristian clicks on #name (completed)" width="1366"/>
+                <img src="8f03bb9eb8311e35d0d98573999185c4c1b81e6b0257df11709e6809d2619d0c.png" title=" Cristian clicks on #name" width="1366"/>
+                <img src="a0eaec580d6312874e4265c260f984b65df3654029a5c27838fde31cae8e79e0.png" title=" Cristian clicks on #name (completed)" width="1366"/>
+                <img src="a0eaec580d6312874e4265c260f984b65df3654029a5c27838fde31cae8e79e0.png" title=" Cristian cuarta prenda (completed)" width="1366"/>
+                <img src="a0eaec580d6312874e4265c260f984b65df3654029a5c27838fde31cae8e79e0.png" title=" When selecciono cuatro prendas (completed)" width="1366"/>
+                <img src="2557d7d06e2f6548756927164090b4facdd03582bc4296a62d4c890c287f8467.png" title=" Then despliega cartel bloqueante: <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.3.4</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Atención</title>
+    <link href="http://resources.personal.com.ar/styles/v1/css/tpstyle.css" type="text/css" rel="stylesheet"> 
+    <link href="./assets/css/styles.css" type="text/css" rel="stylesheet"> 
+</head>
+<body>
+    <div class="tp-gradiente-colores margin-tb"></div>
+    <img class="center-block" src="./assets/img/personal/logo.svg">
+    <div class="line-divisor-grey"></div>
+
+    <div class="container text-center margin-t">
+        <div class="row">
+            <div class="col-xs-12 col-md-offset-2 col-md-8">
+                <h3 class="title text-bold">
+                    Queríamos avisarte que tu línea ya no cuenta con crédito
+                </h3>
+                <h4>
+                    No queremos que te quedes sin poder navegar. <br> Por eso, te ofrecemos recargar crédito para seguir navegando a máxima velocidad.
+                </h4>                
+                <img src="./assets/icon/fa-download.svg" class="margin-tb">
+                <h5>Recargá online y recibí un <span class="text-bold">20% de crédito promocional</span></h5>
+                <div class="line-divisor-grey-sm"></div>
+                <div>
+                    <a href="https://recarga.personal.com.ar/pages/phone?icn=recarga_personal&amp;ici=portal_cautivo" class="btn btn-primary btn-lg btn-block center-block btn-anchor">
+                        RECARGAR AHORA
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body></html>
