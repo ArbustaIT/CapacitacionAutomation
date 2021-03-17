@@ -1,4 +1,4 @@
-# CapacitacionAutomation
+# CapacitacionAutomation Arbusta
 ## Herramientas utilizadas:
 - **IDE:** Eclipse.
 - **Lenguaje:** Java.
