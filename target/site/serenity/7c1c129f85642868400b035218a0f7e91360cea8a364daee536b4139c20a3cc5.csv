@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Login","Validación Login Exitoso","SUCCESS","2021-03-31T08:28:09.4992277-05:00[America/Bogota]","0.0","19.12"
+"Login","Validación Login Fallido","SUCCESS","2021-03-31T08:28:29.3583965-05:00[America/Bogota]","0.0","15.45"
+"Login","Nueva Contraseña","SUCCESS","2021-03-31T08:28:45.5550741-05:00[America/Bogota]","0.0","19.36"

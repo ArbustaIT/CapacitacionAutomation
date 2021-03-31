@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Registro","Validacion Registro Fallido","FAILURE","2021-03-31T08:29:40.5545108-05:00[America/Bogota]","0.0","64.19"
+"Registro","Validación Registro Exitoso","FAILURE","2021-03-31T08:30:45.5760264-05:00[America/Bogota]","0.0","69.42"
+"Busqueda palabra","buscar palabra","ERROR","2020-11-11T13:41:48.5544429-05:00[America/Bogota]","0.0","17.27"

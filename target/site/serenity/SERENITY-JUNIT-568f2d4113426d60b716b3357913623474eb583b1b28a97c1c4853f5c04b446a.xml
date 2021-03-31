@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Historial de pedidos" skipped="0" tests="3" time="162.89" timestamp="2021-03-31 08:25:24"><testcase name="PDF de orden de compra"/><testcase name="Detalle de una orden de compra"/><testcase name="Reordenar una compra"/></testsuite>

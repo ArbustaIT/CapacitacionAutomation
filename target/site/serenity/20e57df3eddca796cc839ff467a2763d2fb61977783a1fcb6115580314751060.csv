@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Historial de pedidos","PDF de orden de compra","SUCCESS","2021-03-31T08:25:24.2982837-05:00[America/Bogota]","0.0","52.9"
+"Historial de pedidos","Detalle de una orden de compra","SUCCESS","2021-03-31T08:26:17.9464822-05:00[America/Bogota]","0.0","51.97"
+"Historial de pedidos","Reordenar una compra","SUCCESS","2021-03-31T08:27:10.755555-05:00[America/Bogota]","0.0","58.01"
