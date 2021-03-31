@@ -1,6 +1,6 @@
 package co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks;
 
-import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.UIlogin;
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.UILogin;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
@@ -24,11 +24,11 @@ public class Loguearse implements Task  {
 
 			actor.attemptsTo(
 					
-							Click.on(UIlogin.BTN_SingIn),
-							Scroll.to(UIlogin.BOX_sectorAuthentication),
-							Enter.theValue(email).into(UIlogin.CMP_email),
-							Enter.theValue(passwd).into(UIlogin.CMP_passwd),
-							Click.on(UIlogin.BTN_SubmitLogin)			
+							Click.on(UILogin.BTN_SingIn),
+							Scroll.to(UILogin.BOX_sectorAuthentication),
+							Enter.theValue(email).into(UILogin.CMP_email),
+							Enter.theValue(passwd).into(UILogin.CMP_passwd),
+							Click.on(UILogin.BTN_SubmitLogin)			
 					); }
 		
 		public static Loguearse correctamente(String email, String passwd) {

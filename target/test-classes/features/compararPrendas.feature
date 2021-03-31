@@ -5,8 +5,8 @@ Feature: Comparar Prendas
 	quiero comparar prendas
 	para visualizar su información.
 
-Background:
-	Given ingreso a la pagina principal
+ Background:
+   Given que el usuario se encuentra en la pagina de automationpractice
  
   Scenario: Comparar una prenda  
 	When selecciono una prenda 

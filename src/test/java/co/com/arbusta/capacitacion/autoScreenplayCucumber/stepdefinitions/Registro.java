@@ -32,10 +32,10 @@ public class Registro {
 		Cristian.can(BrowseTheWeb.with(driver));
 	}
 	
-    @Given("^que el navegante se encuentra en la pagina automationpractice$")
-    public void que_el_navegante_se_encuentra_en_la_pagina_automationpractice() {
-    	Cristian.attemptsTo(IrA.automationPractice(page));
-    }
+//    @Given("^que el navegante se encuentra en la pagina automationpractice$")
+//    public void que_el_navegante_se_encuentra_en_la_pagina_automationpractice() {
+//    	Cristian.attemptsTo(IrA.automationPractice(page));
+//    }
 
     @When("^el navegante se registra incorrectamente$")
     public void el_navegante_se_registra_incorrectamente() {

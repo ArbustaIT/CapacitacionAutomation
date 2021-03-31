@@ -33,10 +33,10 @@ public class CategoriasEnMenu {
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	}
 	
-    @Given("^que el usuario ingresa a automationpractice$")
-    public void que_el_usuario_ingresa_a_automationpractice() {
-    	Cristian.attemptsTo(IrA.automationPractice(page));
-    }
+//    @Given("^que el usuario ingresa a automationpractice$")
+//    public void que_el_usuario_ingresa_a_automationpractice() {
+//    	Cristian.attemptsTo(IrA.automationPractice(page));
+//    }
 
     @When("^el usuario selecciona una categoria del menu$")
     public void el_usuario_selecciona_una_categoria_del_menu() {

@@ -36,10 +36,10 @@ public class CompararPrendas {
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	}
         
-    @Given("^ingreso a la pagina principal$")
-    public void ingreso_a_la_pagina_principal() {
-    	Cristian.attemptsTo(IrA.automationPractice(page));
-    }
+//    @Given("^ingreso a la pagina principal$")
+//    public void ingreso_a_la_pagina_principal() {
+//    	Cristian.attemptsTo(IrA.automationPractice(page));
+//    }
 
     // selecciono una prenda
     

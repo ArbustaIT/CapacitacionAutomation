@@ -5,9 +5,9 @@ Feature: Login
 	quiero loguearme en la pagina
 	para acceder a mi usuario
 
-Background:
-	Given que el usuario se encuentra en la pagina
-	
+ Background:
+   Given que el usuario se encuentra en la pagina de automationpractice
+   
   Scenario: Validación Login Exitoso  
 	When el usuario ingresa las credenciales
 	Then ingresa correctamente a la aplicación de automationpractice

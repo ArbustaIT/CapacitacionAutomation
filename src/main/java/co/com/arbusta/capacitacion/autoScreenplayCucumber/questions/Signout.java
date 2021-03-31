@@ -1,6 +1,6 @@
 package co.com.arbusta.capacitacion.autoScreenplayCucumber.questions;
 
-import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.UIlogin;
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.UILogin;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
@@ -10,7 +10,7 @@ public class Signout implements Question<Boolean>{
 	public Boolean answeredBy(Actor actor) {
 		
 				
-		 String texto = UIlogin.BTN_SingOut.resolveFor(actor).getText().toString();		 
+		 String texto = UILogin.BTN_SingOut.resolveFor(actor).getText().toString();		 
 	
 		 return texto.contains("pax");
 	}

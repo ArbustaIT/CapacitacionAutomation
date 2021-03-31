@@ -32,9 +32,9 @@ public class BarraDeBusqueda {
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	}
 	
-    @Given("^que el usuario se encuentra en la pagina de automationpractice$")
-    public void que_el_usuario_se_encuentra_en_la_pagina_de_automationpractice() {
-    	Cristian.attemptsTo(IrA.automationPractice(page));   }
+//    @Given("^que el usuario se encuentra en la pagina de automationpractice$")
+//    public void que_el_usuario_se_encuentra_en_la_pagina_de_automationpractice() {
+//    	Cristian.attemptsTo(IrA.automationPractice(page));   }
     
     //Escenario Exitoso
     
@@ -56,6 +56,5 @@ public class BarraDeBusqueda {
     @Then("^se visualiza el menu vacio junto al mensaje sin resultados de busqueda$")
     public void se_visualiza_el_menu_vacio_junto_al_mensaje_sin_resultados_de_busqueda() {
     	Cristian.asksFor(cartelSinResultados.muestra());
-    }
-    
+    }   
 }

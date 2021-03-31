@@ -1,6 +1,6 @@
 package co.com.arbusta.capacitacion.autoScreenplayCucumber.tasks;
 
-import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.UIlogin;
+import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.UILogin;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
@@ -18,11 +18,11 @@ public class PedirNuevaContraseña implements Task {
 
 		actor.attemptsTo(
 				
-				Scroll.to(UIlogin.BOX_sectorLogin),
-				Click.on(UIlogin.BTN_olvide_la_pass),
-				Scroll.to(UIlogin.BOX_sectorRecupero),
-				Enter.theValue("lorem555@ipsum.es").into(UIlogin.CMP_email),
-				Click.on(UIlogin.BTN_forgot_pass)
+				Scroll.to(UILogin.BOX_sectorLogin),
+				Click.on(UILogin.BTN_olvide_la_pass),
+				Scroll.to(UILogin.BOX_sectorRecupero),
+				Enter.theValue("lorem555@ipsum.es").into(UILogin.CMP_email),
+				Click.on(UILogin.BTN_forgot_pass)
 			);
 	}
 	

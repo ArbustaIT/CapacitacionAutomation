@@ -1,7 +1,6 @@
 package co.com.arbusta.capacitacion.autoScreenplayCucumber.questions;
 
 import co.com.arbusta.capacitacion.autoScreenplayCucumber.userinterfaces.UIregistro;
-import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 

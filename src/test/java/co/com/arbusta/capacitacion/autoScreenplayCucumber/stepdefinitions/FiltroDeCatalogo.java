@@ -31,8 +31,8 @@ public class FiltroDeCatalogo {
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	}
 	
-    @Given("^que el usuario se encuentra en el catalogo de automationpractice$")
-    public void que_el_usuario_se_encuentra_en_el_catalogo_de_automationpractice() {
+    @Given("^que el usuario se encuentra en el catalogo$")
+    public void que_el_usuario_se_encuentra_en_el_catalogo() {
     	Cristian.attemptsTo(IrA.automationPractice(page));
     }
 

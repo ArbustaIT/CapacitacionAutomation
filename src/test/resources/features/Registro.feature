@@ -5,8 +5,8 @@ Feature: Registro
 	quiero registrarme en la pagina
 	para obtener un usuario
 
-Background:
-	Given que el navegante se encuentra en la pagina automationpractice
+ Background:
+   Given que el usuario se encuentra en la pagina de automationpractice
 
   Scenario: Validacion Registro Fallido	
 	When el navegante se registra incorrectamente

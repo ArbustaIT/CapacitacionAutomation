@@ -6,6 +6,6 @@ Feature: catalogo secundario
 	para visualizar los productos correspondientes de la sección elegida
 
  Scenario: desplazamiento entre catalogos
-	Given que el usuario se encuentra en automationpractice
+	Given que el usuario se encuentra en la pagina
 	When el usuario selecciona un catalogo
 	Then se visualizan los productos correspondientes a la seccion

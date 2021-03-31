@@ -6,6 +6,6 @@ Feature: Filtro De Catalogo
 	para visualizar el stock que cumple dichas condiciones
 
   Scenario: 
-	Given que el usuario se encuentra en el catalogo de automationpractice
+	Given que el usuario se encuentra en el catalogo
 	When el usuario realiza un filtro
 	Then se muestran los resultados de la busqueda con el filtro

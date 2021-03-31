@@ -8,7 +8,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/CategoriasEnMenu.feature",
+        features = "src/test/resources/features",
         glue = {"co.com.arbusta.capacitacion.autoScreenplayCucumber.stepdefinitions"},
         snippets = SnippetType.UNDERSCORE)
 public class CategoriasEnMenu {

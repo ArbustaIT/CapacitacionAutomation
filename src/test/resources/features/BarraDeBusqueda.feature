@@ -6,8 +6,8 @@ Feature: Barra De Busqueda
 	quiero buscar un producto desde el buscador
 	para que me despliegue los resultados de la busqueda
 
-Background:
-	Given que el usuario se encuentra en la pagina de automationpractice
+ Background:
+   Given que el usuario se encuentra en la pagina de automationpractice
 
   @escenarioExitoso
   Scenario: Buscar producto existente	

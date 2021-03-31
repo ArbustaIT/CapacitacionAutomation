@@ -7,7 +7,7 @@ import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.annotations.DefaultUrl;
 
 @DefaultUrl("http://automationpractice.com/")
-public class UIlogin extends PageObject{
+public class UILogin extends PageObject{
 	
 	// flujo de login
 	
@@ -30,5 +30,10 @@ public class UIlogin extends PageObject{
 	public static final Target BOX_passwdInvalid = Target.the("Cartel de error por contraseña invalida").located(By.xpath("//*[@id=\"center_column\"]/div[1]/ol/li"));
 	public static final Target BOX_confirmacionEmail = Target.the("Cartel de email de recupero enviado").located(By.xpath("//*[@id=\"center_column\"]/div/p"));
 
+	//Iniciar sesion
+	
+    public static final Target BTN_Login = Target.the("Botón login").located(By.xpath("//header/div[2]/div[1]/div[1]/nav[1]/div[1]/a[1]"));
+    public static final Target INPUT_email = Target.the("Input email").located(By.xpath("//input[@id='email']"));
+    public static final Target INPUT_pass  = Target.the("Input contraseña").located(By.xpath("//*[@id=\"passwd\"]"));
 }
 
